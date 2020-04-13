@@ -32,4 +32,9 @@ func TestHello(t *testing.T) {
 		want := "Bonjour, Yesid"
 		assertMessage(t, got, want)
 	})
+	t.Run("Say Привет, second argument languaje", func(t *testing.T) {
+		got := Hello("хуанхо", "Ruso")
+		want := "Привет, хуанхо"
+		assertMessage(t, got, want)
+	})
 }
